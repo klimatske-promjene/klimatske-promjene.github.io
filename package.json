@@ -2,7 +2,7 @@
   "name": "jekyll-book-framework",
   "version": "1.0.0",
   "description": "A jekyll framework for publishing book in multiple format (HTML, PDF, epub)",
-  "author": "Michael Ravedoni",
+  "author": "Leonarda Srdelic",
   "license": "MIT",
   "keywords": [
     "web-publications",
@@ -28,10 +28,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michaelravedoni/jekyll-book-framework.git"
+    "url": "git+https://github.com/klimatske-promjene/jekyll-book-framework.git"
   },
   "bugs": {
-    "url": "https://github.com/michaelravedoni/jekyll-book-framework/issues"
-  },
-  "homepage": "https://ravedoni.com/test/jekyll-book-framework/"
+    "url": "https://github.com/klimatske-promjene/jekyll-book-framework/issues"
+  }
 }
