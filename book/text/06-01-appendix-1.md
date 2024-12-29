@@ -1,6 +1,6 @@
 ---
-title: "Appendix 1"
+title: I. Dodatak
 type: appendix
-parent: Appendix
+parent: Dodatak
 ---
 Appendix 1

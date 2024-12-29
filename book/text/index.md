@@ -1,5 +1,5 @@
 ---
-title: Text
+title: Sadržaj
 ---
 {% include metadata %}
 

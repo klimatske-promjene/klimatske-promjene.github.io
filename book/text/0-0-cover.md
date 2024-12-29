@@ -1,5 +1,5 @@
 ---
-title: Cover
+title: Naslovnica
 type: cover
 ---
 {% include metadata %}

@@ -8,39 +8,39 @@ show_full_navigation: false
 
 # Serving
 port                : 4000
-host                : 127.0.0.1
+host                : 127.0.0.2
 show_dir_listing    : false
 
 # ----
 # Book
 
-bookTitle           : "Book title" # Required
-shortTitle          : "Short book title"
-description         : "Book short description"
+bookTitle           : "Ekonomija klimatskih promjena" # Required
+shortTitle          : "Ekonomija klimatskih promjena"
+description         : "Kratki opis knjige"
 creators:
-  - lastName        : lastName
-    firstName       : firstName
-    affiliation     : affiliation
-    email           : authorname@domain.com
+  - lastName        : Srdelić
+    firstName       : Leonarda
+    affiliation     : Institut za javne financije
+    email           : leonarda.srdelic@ijf.hr
     twitter         : "@authorname"
     sameAs          :
       - https://authorname.com/
-  - lastName        : lastName 2
-    firstName       : firstName 2
+  - lastName        : Švaljek
+    firstName       : Sandra
     creatorType     : Directeur
-    affiliation     : affiliation 2
-    email           : authorname2@domain.com
+    affiliation     : Hrvatska narodna banka
+    email           : sandra.svaljek@hnb.hr
     twitter         : "@authorname2"
 publisher           : Publisher
 cc                  : CC-BY # Choose a Creative Commons license (https://creativecommons.org/choose/)
-date                : 2018-01-01
+date                : 2024-12-27
 pdf                 : #"/doc/book.pdf" # If different from generated
 pod           : # Print-on-demand version
 markdownD           : #todo
 epub                : #todo
 mobi                : #todo
 isbn                : 9780030426599
-lang                : fr
+lang                : en
 isFamilyFriendly    : true
 genre               :
 funder              :
@@ -54,7 +54,7 @@ keywords: "publishing, book, publishing chain, word processor, desktop publishin
 
 status              : draft # draft, revised, published
 version             : v1.0
-versiondate         : 2018-11-20
+versiondate         : 2024-12-27
 
 # -----
 # Book links
@@ -75,7 +75,9 @@ logo                : assets/icon/favicon.png
 # For the registry of tags:
 # http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 # Useful lookup tool: http://r12a.github.io/apps/subtags/
-language: en
+language: hr
+
+
 
 # Gem-based theme
 # ---------------
@@ -96,7 +98,7 @@ edition: "default"
 # To make absolute links work, e.g. in canonical links in <head>,
 # include the url where this site will live when it's live (production).
 # E.g. canonical-url: "http://example.com"
-canonical-url: "http://example.com"
+canonical-url: ""
 
 # Base URL
 # --------
@@ -104,7 +106,7 @@ canonical-url: "http://example.com"
 # the name of your repo, e.g. /electric-book
 # It must start with a slash. Otherwise you can leave it blank. See:
 # http://downtothewire.io/2015/08/15/configuring-jekyll-for-user-and-project-github-pages/
-baseurl: ""
+baseurl: "/jekyll-book-framework"
 
 # GitHub Pages repository
 # -----------------------
@@ -135,7 +137,7 @@ schema:
 # -----
 # Build
 
-locale              : fr
+locale              : en
 encoding            : UTF-8
 timezone            : Etc/UTC
 permalink           : pretty
@@ -171,13 +173,14 @@ defaults:
 # Jekyll Scholar
 
 scholar:
-  style             : american-political-science-association
-  locale            : fr
-  source            : _bibliography
-  bibliography      : bibliography.bib
-  relative          : "/6-appendices/bibliography/"
-  sort_by           : author
-  bibliography_list_tag : ul
+  style: american-political-science-association
+  locale: en
+  source: _bibliography
+  bibliography: bibliography.bib
+  relative: "/6-appendices/bibliography/"
+  sort_by: author
+  bibliography_list_tag: ul
+
 
 # --------------
 # Jekyll Microtypo

@@ -1,7 +1,7 @@
 ---
-title: "1.1. Section 1"
+title: 1.1. Efekt staklenika
 type: section
-parent: 1. Chapter 1
+parent: 1. Znanost o klimatskim promjenama
 ---
 Omitto iuris dictionem in libera civitate contra leges senatusque consulta; caedes relinquo; libidines praetereo, quarum acerbissimum extat indicium et ad insignem memoriam turpitudinis et paene ad iustum odium imperii nostri, quod constat nobilissimas virgines se in puteos abiecisse et morte voluntaria necessariam turpitudinem depulisse. Nec haec idcirco omitto, quod non gravissima sint, sed quia nunc sine teste dico.
 

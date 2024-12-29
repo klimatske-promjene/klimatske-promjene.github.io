@@ -1,5 +1,5 @@
 ---
-title: Title page
+title: Naslovna stranica
 type: title-page
 ---
 {% include metadata %}

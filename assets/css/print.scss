@@ -8,7 +8,7 @@ $baseurl: "{{ site.baseurl }}";
 /* Fonts */
 
 @font-face {
-  font-family: 'Fira Mono';
+  font-family: 'Source Sans Pro';
   src: url($baseurl+'/assets/fonts/FiraMono-Regular.woff2') format('woff2'),
        url($baseurl+'/assets/fonts/FiraMono-Regular.woff') format('woff');
   font-weight: 400;
@@ -16,7 +16,7 @@ $baseurl: "{{ site.baseurl }}";
 }
 
 @font-face {
-  font-family: 'Fira Mono Bold';
+  font-family: 'Source Sans Pro Bold';
   src: url($baseurl+'/assets/fonts/FiraMono-Bold.woff2') format('woff2'),
        url($baseurl+'/assets/fonts/FiraMono-Bold.woff') format('woff');
   font-weight: 500;
@@ -24,28 +24,28 @@ $baseurl: "{{ site.baseurl }}";
 }
 
 @font-face {
-    font-family: 'Fira Sans';
+    font-family: 'Source Sans Pro';
     src: url($baseurl+'/assets/fonts/FiraSans-Regular.woff2') format('woff2'),
          url($baseurl+'/assets/fonts/FiraSans-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal; }
 
 @font-face {
-    font-family: 'Fira Sans';
+    font-family: 'Source Sans Pro';
     src: url($baseurl+'/assets/fonts/FiraSans-Italic.woff2') format('woff2'),
          url($baseurl+'/assets/fonts/FiraSans-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic; }
 
 @font-face {
-    font-family: 'Fira Sans';
+    font-family: 'Source Sans Pro';
     src: url($baseurl+'/assets/fonts/FiraSans-SemiBold.woff2') format('woff2'),
          url($baseurl+'/assets/fonts/FiraSans-SemiBold.woff') format('woff');
     font-weight: 500;
     font-style: normal; }
 
 @font-face {
-    font-family: 'Fira Sans';
+    font-family: 'Source Sans Pro';
     src: url($baseurl+'/assets/fonts/FiraSans-SemiBoldItalic.woff2') format('woff2'),
          url($baseurl+'/assets/fonts/FiraSans-SemiBoldItalic.woff') format('woff');
     font-weight: 500;
@@ -130,7 +130,7 @@ $baseurl: "{{ site.baseurl }}";
   --margin-top: 73px;
   --margin-bottom: 73px;
 	--color-primary: teal;
-	--color-secondary: indianred;
+
 	--color-bg-chapter: whitesmoke;
 	--font-size-base: 16px;
 }
@@ -138,7 +138,7 @@ $baseurl: "{{ site.baseurl }}";
 @page {
   size: A5 portrait;
 
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Source Sans Pro";
   font-weight: 400 ;
   font-size: var(--font-size-base);
 	line-height: 27px;
@@ -278,7 +278,7 @@ p {
 /* Cover */
 .cover-header,
 .cover-meta {
-	margin-left: 2rem;
+	margin-left: 0;
 	line-height: initial;
 }
 .cover-book-title {
@@ -297,36 +297,36 @@ p {
   text-align: left;
   }
 .cover-creators {
-	font-size: 36px;
+	font-size: 20px;
   color: white;
-  margin-top: 2rem;
+  margin-top: -20rem;
   margin-bottom: 10px;
 }
 .cover-image-container {
   overflow: hidden;
-  max-width: 100%;
+  max-width: 200%;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
-  max-height: calc(100% - 250px);
+  max-height: calc(100% + 100px);
 }
 .cover-image {
 	width: auto;
-	max-width: 100%;
+	max-width: 200%;
   object-fit: cover;
   object-position: left bottom;
 }
 .cover-meta {
 	text-align: right;
-	margin-right: 2rem;
+	margin-right: 0rem;
 }
 
 /* Half-title */
 .half-title-title {
 	text-align: center;
 	margin-bottom:4em;
-	font-size: 2.75em;
+	font-size: 1.5em;
 	line-height: 1.25em;
 }
 
@@ -338,11 +338,15 @@ p {
 	line-height: 1.25em;
 }
 .title-page-creators {
-	text-align: center;
-	margin-bottom: 4em;
-	font-size: 1.75em;
-	line-height: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centriranje teksta na sredinu */
+  margin-bottom: 4em;
+  font-size: 15px;
+  line-height: 1.5em; /* Razmak između redova */
+  text-align: center;
 }
+
 .title-page-bottom-wrapper {
 	position:absolute;
 	bottom: 10px;

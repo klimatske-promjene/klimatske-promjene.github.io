@@ -1,7 +1,6 @@
 ---
-title: "Glossary"
+title: Riječnik
 type: glossary
-parent: Appendix
 ---
 #### Asciidoc
 Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria

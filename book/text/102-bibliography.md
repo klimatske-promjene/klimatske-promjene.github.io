@@ -1,17 +1,16 @@
 ---
-title: "Bibliography"
+title: Literatura
 type: bibliography
-parent: Appendix
 ---
 
-## Books
+## Knjige
 
 {% bibliography --query @book @incollection %}
 
-## Thesis
+## Znanstveni radovi
 
 {% bibliography --query @phdthesis %}
 
-## Articles
+## Stručna literatura
 
 {% bibliography --query @misc %}

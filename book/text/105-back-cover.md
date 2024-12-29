@@ -30,4 +30,4 @@ type: back-cover
   </div>
   <div class="back-cover-qr"><img src='https://barcode.tec-it.com/barcode.ashx?data={{site.url|url_encode}}&code=MobileQRCode&multiplebarcodes=false&translate-esc=false&unit=Fit&dpi=96&imagetype=Svg&rotation=0&color=%23000000&bgcolor=%23ffffff&qunit=Mm&quiet=0&modulewidth=0.265&eclevel=L' alt='Barcode Generator TEC-IT'/></div>
 </div>
-<div class="back-cover-meta">Cover: {{work.cover_image.title}} by {{work.cover_image.creator}}</div>
+<div class="back-cover-meta">Cover: {{work.cover_image.title}} napisale i izradile {{work.cover_image.creator}}</div>

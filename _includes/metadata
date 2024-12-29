@@ -82,7 +82,7 @@ because we can't get the usual book-related metadata for items. {% endcomment %}
 {% if is-items-directory %}
 
     {% comment %} Are we in the main _items/text directory,
-    or a subdirectory like _items/fr/text? {% endcomment %}
+    or a subdirectory like _items/en/text? {% endcomment %}
     {% assign items-folder-depth = page.path | split: "/" | size %}
     {% if items-folder-depth > 3 %}
         {% assign is-items-subdirectory = true %}

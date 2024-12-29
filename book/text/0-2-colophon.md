@@ -7,8 +7,8 @@ type: colophon
 
 <div class="colophon-meta">
 <div class="colophon-title">{{title}}</div>
-<div class="colophon-creators">by {% for creator in creators %}{{creator.firstName}} {{creator.lastName}}{% if forloop.last == true %}{% else %}, {% endif %}{% endfor %}</div>
-<div class="colophon-published-by">Published by {{work.publisher.name}}, {{work.publisher.location}}</div>
+<div class="colophon-creators"> {% for creator in creators %}{{creator.firstName}} {{creator.lastName}}{% if forloop.last == true %}{% else %}, {% endif %}{% endfor %}</div>
+<div class="colophon-published-by"> {{work.publisher.name}}, {{work.publisher.location}}</div>
 <div class="colophon-rights">{{work.rights}}</div>
 </div>
 
@@ -32,12 +32,12 @@ type: colophon
 </div>-->
 
 <div class="colophon-citation">
-<div class="colophon-citation-heading">Suggested citation</div>
+<div class="colophon-citation-heading">Preporučeno citiranje</div>
 <div class="colophon-citation-item">{{creators-line}}. {{work.date|date: '%Y'}}{% if title %}. <i>{{title}}</i>{% endif %}{% if publisher %}. {{publisher.name}}{% endif %}{% if isbn %}. ISBN: {{isbn}}{% endif %}{% if issn %}. ISSN: {{issn}}{% endif %}{% if doi %}. DOI: {{doi}}{% endif %}{% if pid %}. {{pid}}{% endif %}.</div>
 </div>
 
 <div class="colophon-history">
-<div class="colophon-history-heading">Revision</div>
+<div class="colophon-history-heading">Revizije</div>
 {% for r in work.revision_history %}
 <div class="colophon-history-item">
   <span class="colophon-history-date">{{r.date|date: '%d.%m.%Y'}}:</span> <span class="colophon-history-summary">{{r.summary}}</span>
@@ -54,6 +54,6 @@ type: colophon
 </div>
 
 <div class="colophon-cover">
-<div class="colophon-cover-heading">On the front cover</div>
+<div class="colophon-cover-heading">Na početnoj stranici</div>
 <div class="colophon-cover-item">{{work.cover_image.title}}{% if work.cover_image.date %}. {{work.cover_image.date}}{% endif %}{% if work.cover_image.creator %}. {{work.cover_image.creator}}{% endif %}.{% if work.cover_image.text %} <span class="colophon-cover-text">{{work.cover_image.text}}</span>{% endif %} {% if work.cover_image.text %} <span class="colophon-cover-source">{{work.cover_image.license}} from <a href="{{work.cover_image.source_url}}">{{work.cover_image.source}}</a></span>.{% endif %}</div>
 </div>

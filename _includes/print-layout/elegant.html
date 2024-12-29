@@ -17,7 +17,7 @@
 		<p>
 		{{work.rights}}<br />
 		Printed in the Universe.<br />
-		Published by {{work.publisher.name}}, {{work.publisher.location}}
+		Izdao {{work.publisher.name}}, {{work.publisher.location}}
 		</p>
 
 		<div>{% for contributor in work.contributors %}{{contributor.role}}: {{contributor.firstName}} {{creator.lastName}}{% if forloop.last == true %}{% else %}<br>{% endif %}{% endfor %}</div>

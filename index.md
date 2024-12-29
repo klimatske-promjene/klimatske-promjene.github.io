@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Početna
 layout: home
 ---
 {% include metadata %}
@@ -14,10 +14,10 @@ layout: home
 {% endfor %}
 </section>
 
-## Abstract
+## Sažetak
 {{ abstract }}
 
-## Authors
+## Autori
 <div class="home-creators">
 {% for c in creators %}
 <div class="home-creator">
@@ -54,13 +54,13 @@ layout: home
 </div>
 </div>
 
-## License
+## Vlasništvo
 
 <a href="{{license.url}}"><img src="{{site.baseurl}}/images/{{license.abbreviation|downcase}}.svg" alt="Creative Commons {{license.name}}" style="width:150px;height:auto;"></a>
 
 {{work.rights}}
 
-Published by {{work.publisher.name}}, {{work.publisher.location}}
+Izdano od {{work.publisher.name}}, {{work.publisher.location}}
 
 <div class="colophon-licenses">
 

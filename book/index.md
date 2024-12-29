@@ -1,5 +1,5 @@
 ---
-title: Book
+title: Knjiga
 ---
 
 {% include toc %}

@@ -1,4 +1,4 @@
 # Journal
 
-## Monday 22 november 2018
-Project created.
+## Ponedjeljak 30. prosinca 2024. 
+Izrađeno

@@ -4,10 +4,10 @@ Get the file metadata.
 {% include metadata %}
 
 <div class="pdf-generated">
-<h2>Generated</h2>
+<h2>Izrađeno</h2>
 {% for f in work.products['print-pdf'].generated %}
   <div class="pdf-generated-item">
-    <strong>{{f.name}}</strong> <small>{{f.date|date: '%d.%m.%Y'}} ({{f.size}} - {{f.color}})</small> &rarr; <a href="{{site.url}}{{site.baseurl}}{{f.url}}">Get file</a>
+    <strong>{{f.name}}</strong> <small>{{f.date|date: '%d.%m.%Y'}} ({{f.size}} - {{f.color}})</small> &rarr; <a href="{{site.url}}{{site.baseurl}}{{f.url}}">Preuzmi datoteku</a>
   </div>
 {% endfor %}
 </div>

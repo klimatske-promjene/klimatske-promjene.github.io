@@ -1,7 +1,6 @@
 # ----
 # Site
 
-url                 : "https://ravedoni.com"
 
 # This is the live build
 build: live

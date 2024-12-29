@@ -1,4 +1,4 @@
 ---
-title: "Paged view"
+title: "Pregled"
 layout: print
 ---

@@ -1,5 +1,5 @@
 ---
-title: "PDF for print"
+title: "PDF za ispis"
 layout: page
 ---
 

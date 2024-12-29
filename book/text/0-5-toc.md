@@ -1,5 +1,5 @@
 ---
-title: Table of contents
+title: Sadržaj
 type: toc
 ---
 {% include metadata %}
