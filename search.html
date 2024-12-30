@@ -16,26 +16,23 @@ layout: page
 
 <script>
 	window.data = {
-		{% for item in site.book %}
-			{% if item.title %}
-				{% unless item.excluded_in_search %}
-					{% if added %},{% endif %}
-					{% assign added = false %}
-
-					"{{ item.url | slugify }}": {
-						"id": "{{ item.url | slugify }}",
-						"title": "{{ item.title | xml_escape }}",
-						"category": "{{ collection.title | xml_escape }}",
-						"url": "{{ item.url | xml_escape }}",
-						"content": {{ item.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
-					}
-
-					{% assign added = true %}
-				{% endunless %}
-			{% endif %}
-		{% endfor %}
+	  {% assign first = true %}
+	  {% for item in site.book %}
+		{% unless item.excluded_in_search %}
+		  {{- "," unless forloop.first -}}
+		  "{{ item.url | slugify }}": {
+			"id": "{{ item.url | slugify }}",
+			"title": "{{ item.title | xml_escape }}",
+			"category": "{{ item.collection.title | xml_escape }}",
+			"url": "{{ item.url | xml_escape }}",
+			"content": "{{ item.content | strip_html | newline_to_space | escape }}"
+		  }
+		  {% assign first = false %}
+		{% endunless %}
+	  {% endfor %}
 	};
-</script>
+	</script>
+	
 <script src="{{ site.baseurl }}/assets/js/lunr.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
 <script>

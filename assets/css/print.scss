@@ -213,13 +213,15 @@ section.front-matter {
 	@top-right-corner {content: none;}
 	@top-left-corner {content: none;}
 }
-
 .chapter-title {
-  string-set: chaptertitle content(text) ;
+  string-set: chaptertitle content(text);
 }
+
 .cover-book-title {
-	string-set: booktitle content(text) ;
+  string-set: booktitle content(text);
 }
+
+
 
 section.chapter,
 section[data-type="half-title"],

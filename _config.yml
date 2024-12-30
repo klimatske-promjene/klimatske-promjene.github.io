@@ -2,13 +2,12 @@
 # Site
 
 title               : "Site title"
-url                 : ""
 google_analytics_key: ""
 show_full_navigation: false
 
 # Serving
-port                : 4000
-host                : 127.0.0.2
+port                : 4001
+host                : 127.0.0.1
 show_dir_listing    : false
 
 # ----
@@ -27,7 +26,6 @@ creators:
       - https://authorname.com/
   - lastName        : Švaljek
     firstName       : Sandra
-    creatorType     : Directeur
     affiliation     : Hrvatska narodna banka
     email           : sandra.svaljek@hnb.hr
     twitter         : "@authorname2"
@@ -92,21 +90,9 @@ language: hr
 # This can be used to create different editions of a book using
 # Liquid control-flow tags, e.g. in includes, layouts and file-list
 edition: "default"
-
-# Canonical URL
-# -------------
-# To make absolute links work, e.g. in canonical links in <head>,
-# include the url where this site will live when it's live (production).
-# E.g. canonical-url: "http://example.com"
-canonical-url: ""
-
-# Base URL
-# --------
-# If you're using GitHub Pages without a custom domain, make this
-# the name of your repo, e.g. /electric-book
-# It must start with a slash. Otherwise you can leave it blank. See:
-# http://downtothewire.io/2015/08/15/configuring-jekyll-for-user-and-project-github-pages/
+url: "https://klimatske-promjene.github.io"
 baseurl: ""
+
 
 # GitHub Pages repository
 # -----------------------
@@ -147,17 +133,18 @@ plugins:
   - jekyll-scholar
   - jekyll-microtypo
   - jekyll-redirect-from
+  - jekyll-feed
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - materials
-  - package.json
-  - package-lock.json
-  - rsync-ignore.txt
-  - env.json
-  - env-model.json
-  - bin
+#exclude:
+ # - Gemfile
+ # - Gemfile.lock
+ # - materials
+ # - package.json
+ # - package-lock.json
+ # - rsync-ignore.txt
+ # - env.json
+ # - env-model.json
+ # - bin
 
 
 defaults:
@@ -171,13 +158,14 @@ defaults:
 # Jekyll Scholar
 
 scholar:
-  style: american-political-science-association
+  style: apa # ili drugi format
   locale: en
   source: _bibliography
   bibliography: bibliography.bib
-  relative: "/6-appendices/bibliography/"
+  bibliography_list_tag: ol
   sort_by: author
-  bibliography_list_tag: ul
+  order: ascending
+
 
 
 # --------------
