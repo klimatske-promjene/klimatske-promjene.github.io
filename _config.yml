@@ -6,7 +6,7 @@ google_analytics_key: ""
 show_full_navigation: false
 
 # Serving
-port                : 4001
+port                : 4000
 host                : 127.0.0.1
 show_dir_listing    : false
 
