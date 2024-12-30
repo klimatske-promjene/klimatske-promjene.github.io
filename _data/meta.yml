@@ -31,9 +31,6 @@ project:
   app-id: com.example.myapp
   # Version. You must change this with each app update
   version: "1.0.0"
-  # Project's repository.
-  repository: https://github.com/leonardasrdelic/jekyll-book-framework
-  repository_branch: master
 
 
 # ==============================================================================
